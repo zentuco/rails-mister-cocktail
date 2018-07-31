@@ -6,11 +6,11 @@ class Cocktail < ApplicationRecord
 
   validates :name, presence: true, uniqueness: true
 
-  private
+  # private
 
-  def set_image
-    if self.image.empty?
-      self.image = 'https://source.unsplash.com/collection/1032458'
-    end
-  end
+  # def set_image
+  #   if self.image.empty?
+  #     self.image = 'https://source.unsplash.com/collection/1032458'
+  #   end
+  # end
 end
