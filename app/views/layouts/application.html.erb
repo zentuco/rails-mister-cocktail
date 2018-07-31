@@ -11,9 +11,15 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
+    <% if controller_name == 'cocktails' && action_name == "index" %>
+      <%= render "shared/transparent-navbar" %>
+    <% else %>
+      <%= render "shared/navbar" %>
+    <% end %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag "application" %>
+
+    <%= render 'shared/modal' %>
   </body>
 </html>

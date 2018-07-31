@@ -1,0 +1,37 @@
+.cocktail-box {
+  width: 30vw;
+  margin: 30px auto;
+}
+
+.details-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.items-first {
+  display: flex;
+  justify-content: start;
+  width: 40%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-middle {
+  display: flex;
+  justify-content: start;
+  width: 40%;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.items-last {
+  width: 20%;
+  font-size: 12px;
+  color: red;
+}
+
+.new-ingredient {
+  text-align: center;
+}

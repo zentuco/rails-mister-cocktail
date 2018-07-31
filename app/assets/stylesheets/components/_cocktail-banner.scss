@@ -1,0 +1,16 @@
+.cocktail-banner {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: #eee;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cocktail-banner h1{
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}

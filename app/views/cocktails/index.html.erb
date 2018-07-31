@@ -7,7 +7,7 @@
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path cocktail.photo %>');">
         <div class="card-description">
           <h2><%= cocktail.name %></h2>
-          <p>Very cool cocktail</p>
+          <p><%= cocktail.list_ingredients %></p>
         </div>
         <%= link_to "", cocktail, class:"card-link" %>
       </div>
@@ -17,7 +17,7 @@
     <div class="card card-new" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://image.flaticon.com/icons/png/512/32/32360.png');">
         <div class="card-description">
         </div>
-        <%= link_to "", new_cocktail_path, class:"card-link" %>
+        <%= link_to "", "#", data: { toggle: "modal", target: "#addCocktail"}, class:"card-link" %>
       </div>
     </div>
   </div>

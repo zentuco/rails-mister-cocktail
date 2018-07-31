@@ -5,4 +5,8 @@ class Cocktail < ApplicationRecord
   validates :name, presence: true, uniqueness: true
 
   mount_uploader :photo, PhotoUploader
+
+  def list_ingredients
+    ingredients.map(&:name).join(', ')
+  end
 end

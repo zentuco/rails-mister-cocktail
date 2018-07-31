@@ -1,8 +1,10 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= simple_form_for [@cocktail, @dose], html: { class: 'form-inline' } do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <%= f.association :ingredient %>
-  <%= f.input :description %>
-  <%= f.button :submit, class: 'btn btn-secondary' %>
+  <%= f.association :ingredient, label: false, prompt: "New ingredient" %>
+  <%= f.input :description, label: false, placeholder: "Amount" %>
+  <%= f.button :button do %>
+    <i class="fas fa-plus"></i>
+  <% end %>
 <% end %>
